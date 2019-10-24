@@ -1,8 +1,8 @@
 #!/bin/bash
 
-GIANT_DATADIR=/root/.giant
-GIANT_DATADIR_BACKUP=/root/.giant.BACKUP
-GIANT_PATH=/root/giant
+GIANT_DATADIR=~/.giant
+GIANT_DATADIR_BACKUP=~/.giant.BACKUP
+GIANT_PATH=~/giant
 
 echo -e "\n\nupdate giantd ...\n\n"
 cd $GIANT_PATH
