@@ -100,8 +100,8 @@ Description=Giant
 After=network.target
 [Service]
 Type=forking
-User=root
-WorkingDirectory=/root
+User=crypto_user161
+WorkingDirectory=/home/crypto_user161
 ExecStart=~/giant/giantd -conf=~/.giant/giant.conf -datadir=~/.giant
 ExecStop=~/giant/giant-cli -conf=~/.giant/giant.conf -datadir=~/.giant stop
 Restart=on-failure
