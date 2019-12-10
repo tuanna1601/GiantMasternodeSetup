@@ -4,7 +4,7 @@ Script for installation Giant Masternode on Linux VPS
 How launch:
 
 <pre>
-bash <( curl https://raw.githubusercontent.com/GiantPay/GiantMasternodeSetup/master/GiantMasternodeSetup.sh )
+bash <( curl https://raw.githubusercontent.com/tuanna1601/GiantMasternodeSetup/master/GiantMasternodeSetup.sh )
 </pre> 
 
 After execution, the script displays the generated masternode key. Which you should use in masternodes.config.
