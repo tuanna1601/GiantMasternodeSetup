@@ -1,3 +1,25 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@tuanna1601 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+1
+26GiantPay/GiantMasternodeSetup
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
+GiantMasternodeSetup/GiantMasternodeSetup.sh
+@filinberg filinberg Update GiantMasternodeSetup.sh
+bd2372b on Oct 27
+@GiantCoreDev@filinberg@Bruttagente
+122 lines (108 sloc)  4.64 KB
+  
 #!/bin/bash
 
 echo -e "create swap ...\n\n"
@@ -22,17 +44,17 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 echo -e "\n\nsetup giantd ...\n\n"
 cd ~
-wget https://github.com/GiantPay/GiantCore/releases/download/1.4.0.0/giant-1.4.0-x86_64-linux-gnu.tar.gz
-chmod -R 755 ~/giant-1.4.0-x86_64-linux-gnu.tar.gz
-tar -xzf giant-1.4.0-x86_64-linux-gnu.tar.gz
+wget https://github.com/GiantPay/GiantCore/releases/download/1.4.1/giant-1.4.1-x86_64-linux-gnu.tar.gz
+chmod -R 755 ~/giant-1.4.1-x86_64-linux-gnu.tar.gz
+tar -xzf giant-1.4.1-x86_64-linux-gnu.tar.gz
 sleep 5
 mkdir ~/giant
 mkdir ~/.giant
-cp ~/giant-1.4.0/bin/giantd ~/giant
-cp ~/giant-1.4.0/bin/giant-cli ~/giant
+cp ~/giant-1.4.1/bin/giantd ~/giant
+cp ~/giant-1.4.1/bin/giant-cli ~/giant
 sleep 5
-rm -rf ~/giant-1.4.0
-rm ~/giant-1.4.0-x86_64-linux-gnu.tar.gz
+rm -rf ~/giant-1.4.1
+rm ~/giant-1.4.1-x86_64-linux-gnu.tar.gz
 chmod -R 755 ~/giant
 chmod -R 755 ~/.giant
 
@@ -100,7 +122,7 @@ Description=Giant
 After=network.target
 [Service]
 Type=forking
-User=crypto_user161
+User=root
 WorkingDirectory=/home/crypto_user161
 ExecStart=~/giant/giantd -conf=~/.giant/giant.conf -datadir=~/.giant
 ExecStop=~/giant/giant-cli -conf=~/.giant/giant.conf -datadir=~/.giant stop
@@ -120,3 +142,15 @@ sudo systemctl start giantd
 echo -e "Masternode private key: $masternodekey"
 echo -e "Welcome to the GIANT Masternode Network!"
 
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
