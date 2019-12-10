@@ -1,26 +1,4 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@tuanna1601 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-1
-26GiantPay/GiantMasternodeSetup
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
-GiantMasternodeSetup/GiantMasternodeSetup.sh
-@filinberg filinberg Update GiantMasternodeSetup.sh
-bd2372b on Oct 27
-@GiantCoreDev@filinberg@Bruttagente
-122 lines (108 sloc)  4.64 KB
-  
-#!/bin/bash
+ #!/bin/bash
 
 echo -e "create swap ...\n\n"
 sudo touch /var/swap.img
@@ -141,16 +119,3 @@ sudo systemctl start giantd
 # output masternode key
 echo -e "Masternode private key: $masternodekey"
 echo -e "Welcome to the GIANT Masternode Network!"
-
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
