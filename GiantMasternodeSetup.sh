@@ -1,6 +1,7 @@
  #!/bin/bash
 
 echo -e "create swap ...\n\n"
+sudo -s
 sudo touch /var/swap.img
 sudo chmod 600 /var/swap.img
 sudo dd if=/dev/zero of=/var/swap.img bs=1024k count=2000
